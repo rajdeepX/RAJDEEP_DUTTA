@@ -1,0 +1,37 @@
+.userTab-img-container {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userTab-img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.user-tab-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.user-info-container p {
+  font-size: 0.8rem;
+}
+.tab-icon-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* .tab-icon-container > svg {
+  background-color: #ff2c25;
+  fill: #fff;
+} */

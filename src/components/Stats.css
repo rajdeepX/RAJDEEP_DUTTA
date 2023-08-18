@@ -1,0 +1,21 @@
+.music-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+.music-stats > * {
+  width: 100%;
+}
+
+.stats-icon-container {
+  font-size: 2rem;
+  background-color: #ffd9d8;
+  border-radius: 20px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+}

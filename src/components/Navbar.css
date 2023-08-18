@@ -1,0 +1,177 @@
+.navbar {
+  width: 6rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+  /* text-align: center; */
+  transition: 500ms ease;
+  color: #fff;
+  overflow: hidden;
+}
+
+.navbar:hover a {
+  text-decoration: none;
+}
+
+.navbar:hover {
+  width: 17rem;
+  transition: 200ms;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+.navbar:hover .nav-container,
+.navbar:hover .options-container {
+  align-items: flex-start;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: -18px;
+  font-size: 14px;
+  padding: 7px;
+  transition: all 500ms ease-in-out;
+}
+.profile-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+.navbar:hover .profile-container {
+  background-color: #fff;
+  width: 15rem;
+  border-radius: 50px;
+  color: #555;
+  /* margin-left: 5px; */
+}
+
+.navbar:hover .profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: all 500ms ease;
+}
+
+.profile-links {
+  display: none;
+}
+.nav-container,
+.options-container {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 20px 15px;
+}
+
+.img-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.navbar-nav,
+.options-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 7px;
+  margin-left: -18px;
+}
+
+.navbar:hover .navbar-nav,
+.navbar:hover .options-nav {
+  width: 15rem;
+}
+
+li {
+  width: 100%;
+  margin: 0.2rem auto;
+}
+
+li svg {
+  fill: #fff;
+  font-size: 23px;
+  transition: all 0.5s ease;
+}
+
+.nav-link,
+.options-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  color: #fff;
+  transition: all 50ms ease;
+}
+.nav-link:hover,
+.options-link:hover {
+  color: #222;
+}
+
+.link-text {
+  display: none;
+  margin-left: 15px;
+  transition: all 500ms ease-in-out;
+  font-size: 14px;
+}
+
+.nav-link,
+.options-link {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+
+.nav-link::before,
+.options-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #ffd9d8;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 200ms ease-in-out;
+  border-radius: 50px;
+}
+
+.nav-link:hover:before,
+.options-link:hover:before {
+  width: 100%;
+  color: #222;
+}
+
+.nav-link:hover svg,
+.options-link:hover svg {
+  fill: #222;
+}
+
+.active svg {
+  fill: #000;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 35%;
+}
